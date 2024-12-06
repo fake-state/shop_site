@@ -1,0 +1,512 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+@import "vars";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import "mixins";
+
+header {
+  width: 100%;
+  height: 75px;
+  background: #222222;
+}
+
+// Хэдэр
+.headerСontainer {
+  padding-right: 120px;
+  padding-left: 120px;
+  display: flex;
+  justify-content: space-between;
+  // gap: 859px;
+
+  &_leftMenu {
+    max-height: 38px;
+    display: flex;
+    padding-top: 18px;
+    gap: 41px;
+  }
+
+  &_rightMenu {
+    // padding-top: 26px;
+    display: flex;
+    // flex-direction: row;
+    padding-top: 18px;
+    gap: 33px;
+    max-height: 29px;
+
+    // align-content: flex-end;
+    &_icons {
+      display: flex;
+      gap: 33px;
+    }
+  }
+}
+
+.mainScreen {
+  background-color: #f1e4e6;
+  padding-right: 120px;
+  padding-left: 120px;
+  display: flex;
+  justify-content: space-around;
+
+  &_photoBox {
+    height: 764px;
+
+    &_photo {
+      height: 100%;
+    }
+  }
+
+  &_lineText {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+
+    &_lineDiv_line {
+      width: 100%;
+      height: 100%;
+    }
+
+    &_infoBox {
+      display: flex;
+      justify-content: center;
+
+      &_text h1 {
+        @include Font(48px, #222222);
+        font-weight: 800;
+      }
+
+      &_text p {
+        @include Font(32px, #222222);
+        font-weight: 700;
+      }
+
+      &_text span {
+        @include Font(32px, #f16d7f);
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.collectionsScreen {
+  padding-right: 120px;
+  padding-left: 120px;
+  padding-top: 65px;
+
+  &_firstline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $gapCollectionPC;
+    padding-bottom: 30px;
+  }
+
+  &_firstline a {
+    display: block;
+    text-decoration: none;
+    width: $widhtCollectionPC;
+    height: 260px;
+  }
+
+  &_firstline .block1 {
+    background-image: url(./img/for_women.svg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_firstline .block2 {
+    background-image: url(./img/for_men.svg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_firstline .block3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/for_kids.svg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+  }
+
+  &_firstline .up_span {
+    @include Font(16px, #fff);
+    text-align: center;
+    font-weight: 400;
+  }
+  &_firstline .down_span {
+    @include Font(24px, #f16d7f);
+    font-weight: 700;
+  }
+
+  &_block4Div {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: $widthBlock4;
+    margin: auto;
+
+    &_a {
+      background-image: url(./img/accesories.svg);
+      display: flex;
+      text-decoration: none;
+      justify-content: center;
+      width: 100%;
+      height: 180px;
+
+      &_text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &_text .up_span {
+        @include Font(16px, #fff);
+        text-align: center;
+        font-weight: 400;
+      }
+
+      &_text .down_span {
+        @include Font(24px, #f16d7f);
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.shopScreen {
+  padding-top: 96px;
+
+  &_tittle {
+    padding-right: 120px;
+    padding-left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &_h1 {
+      @include Font(30px, #222);
+      font-weight: 400;
+    }
+
+    &_h2 {
+      @include Font(14px, #9f9f9f);
+      font-weight: 400;
+    }
+  }
+}
+
+.discription {
+  color: #9f9f9f;
+}
+
+.cards {
+  padding-right: 120px;
+  padding-left: 120px;
+  padding-top: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  /* flex-direction: row; */
+  justify-content: center;
+
+  .cardbox {
+    position: relative;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    max-width: 360px;
+  }
+
+  /* Блок для картинки карточки */
+  .CardsImageBox {
+    background-color: #000;
+    max-height: 420px;
+  }
+
+  /* Появление Кнопки при наведении */
+  .CardsImageBox:hover .add_to_cart {
+    opacity: 100;
+  }
+
+  /* При наведении на картинку карточки */
+  .imgCard:hover {
+    opacity: 0.6;
+    transition: all 0.5s;
+  }
+}
+
+.add_to_cart {
+  opacity: 0;
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  border: #f1e4e6 1px solid;
+  padding: 10px 10px;
+  transition: all 0.5s;
+  z-index: 2;
+}
+
+.add_to_cart span {
+  color: #ffffff;
+  padding-left: 6px;
+}
+
+.discription {
+  padding-left: 16px;
+}
+
+.discription_h1 {
+  @include Font(13px, #000);
+}
+
+.discription_text {
+  @include Font(14px, #5d5d5d);
+  font-style: light;
+}
+
+.price {
+  @include Font(16px, #f16d7f);
+}
+
+.button_browse {
+  display: block;
+  width: 212px;
+  height: 48px;
+  color: #f26376;
+  background-color: #fff;
+  border-color: #f26376;
+  box-shadow: none;
+  margin: auto;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+// Преимущества
+.advantages {
+  background-color: #222224;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .advBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 360px;
+    gap: 20px;
+  }
+
+  .advBox h1 {
+    @include Font(20px, #fbfbfb);
+  }
+
+  .advBox span {
+    @include Font(13.9px, #fbfbfb);
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+.feedback {
+  background-image: url(./img/feedbackBack.png);
+  padding-top: 97px;
+  padding-bottom: 126px;
+  padding-right: 120px;
+  padding-left: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+
+  &_feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 360px;
+    gap: 30px;
+  }
+
+  &_feed q {
+    text-align: center;
+    @include Font(20px, #222224);
+  }
+
+  &_feed span {
+    font-style: italic;
+  }
+
+  &_subscribe {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  &_subscribe h1 {
+    @include Font(24px, #222224);
+    font-weight: 700;
+    text-align: center;
+  }
+  &_subscribe span {
+    @include Font(18px, #222224);
+  }
+}
+
+/* МЕДИА ЗАПРОСЫ */
+
+/* Планшет 768-1024px */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .headerContainer {
+    gap: 424px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .mainScreen {
+    padding-right: 20px;
+    padding-left: 20px;
+
+    &_photoBox {
+      height: 368px;
+    }
+
+    &_lineText_lineDiv_line {
+      width: 12px;
+      height: 92px;
+    }
+
+    &_lineText_infoBox_text h1 {
+      font-family: "Lato", sans-serif;
+      font-size: 44px;
+      font-style: normal;
+      font-weight: 900;
+    }
+
+    &_lineText_infoBox_text p {
+      @include Font(24px, #222222);
+      font-weight: 700;
+    }
+
+    &_lineText_infoBox_text span {
+      @include Font(24px, #f16d7f);
+    }
+  }
+
+  .collectionsScreen {
+    padding-right: 19px;
+    padding-left: 19px;
+
+    &_firstline {
+      gap: $gapCollectionTB;
+    }
+
+    &_firstline a {
+      width: $widhtCollectionTB;
+      height: 167px;
+    }
+
+    &_block4Div {
+      // padding-right: 16px;
+      // padding-left: 16px;
+      max-width: $widthBlock4TB;
+    }
+  }
+
+  .shopScreen {
+    &_tittle {
+      padding-right: 18px;
+      padding-left: 18px;
+    }
+  }
+  .cards {
+    padding-right: 18px;
+    padding-left: 18px;
+    gap: 12px;
+  }
+}
+
+/* Мобила 320-767px */
+@media (max-width: 767px) and (min-width: 320px) {
+  .headerСontainer {
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+    gap: 0;
+
+    &_rightMenu_icons {
+      display: none;
+    }
+  }
+
+  .mainScreen {
+    padding-right: 16px;
+    padding-left: 16px;
+
+    &_photoBox {
+      display: none;
+    }
+
+    &_lineText {
+      padding-top: 149px;
+      padding-bottom: 148px;
+
+      &_lineDiv_line {
+        width: 12px;
+        height: 61px;
+      }
+
+      &_infoBox_text h1 {
+        font-family: "Lato", sans-serif;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 900;
+      }
+
+      &_infoBox_text p {
+        @include Font(20px, #222222);
+        font-weight: 700;
+      }
+
+      &_infoBox_text span {
+        @include Font(20px, #f16d7f);
+        font-weight: 700;
+      }
+    }
+  }
+
+  .collectionsScreen {
+    padding-right: 16px;
+    padding-left: 16px;
+    gap: 0;
+  }
+
+  .cards {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}

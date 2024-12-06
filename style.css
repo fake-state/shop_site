@@ -1,0 +1,525 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  height: 75px;
+  background: #222222;
+}
+
+.headerСontainer {
+  padding-right: 120px;
+  padding-left: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.headerСontainer_leftMenu {
+  max-height: 38px;
+  display: flex;
+  padding-top: 18px;
+  gap: 41px;
+}
+.headerСontainer_rightMenu {
+  display: flex;
+  padding-top: 18px;
+  gap: 33px;
+  max-height: 29px;
+}
+.headerСontainer_rightMenu_icons {
+  display: flex;
+  gap: 33px;
+}
+
+.mainScreen {
+  background-color: #f1e4e6;
+  padding-right: 120px;
+  padding-left: 120px;
+  display: flex;
+  justify-content: space-around;
+}
+.mainScreen_photoBox {
+  height: 764px;
+}
+.mainScreen_photoBox_photo {
+  height: 100%;
+}
+.mainScreen_lineText {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+.mainScreen_lineText_lineDiv_line {
+  width: 100%;
+  height: 100%;
+}
+.mainScreen_lineText_infoBox {
+  display: flex;
+  justify-content: center;
+}
+.mainScreen_lineText_infoBox_text h1 {
+  color: #222222;
+  font-family: "Lato", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  font-weight: 800;
+}
+.mainScreen_lineText_infoBox_text p {
+  color: #222222;
+  font-family: "Lato", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  font-weight: 700;
+}
+.mainScreen_lineText_infoBox_text span {
+  color: #f16d7f;
+  font-family: "Lato", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  font-weight: 700;
+}
+
+.collectionsScreen {
+  padding-right: 120px;
+  padding-left: 120px;
+  padding-top: 65px;
+}
+.collectionsScreen_firstline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+.collectionsScreen_firstline a {
+  display: block;
+  text-decoration: none;
+  width: 360px;
+  height: 260px;
+}
+.collectionsScreen_firstline .block1 {
+  background-image: url(./img/for_women.svg);
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.collectionsScreen_firstline .block2 {
+  background-image: url(./img/for_men.svg);
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.collectionsScreen_firstline .block3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./img/for_kids.svg);
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+}
+.collectionsScreen_firstline .up_span {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  font-weight: 400;
+}
+.collectionsScreen_firstline .down_span {
+  color: #f16d7f;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-weight: 700;
+}
+.collectionsScreen_block4Div {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1140px;
+  margin: auto;
+}
+.collectionsScreen_block4Div_a {
+  background-image: url(./img/accesories.svg);
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  width: 100%;
+  height: 180px;
+}
+.collectionsScreen_block4Div_a_text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.collectionsScreen_block4Div_a_text .up_span {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  font-weight: 400;
+}
+.collectionsScreen_block4Div_a_text .down_span {
+  color: #f16d7f;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-weight: 700;
+}
+
+.shopScreen {
+  padding-top: 96px;
+}
+.shopScreen_tittle {
+  padding-right: 120px;
+  padding-left: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.shopScreen_tittle_h1 {
+  color: #222;
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-weight: 400;
+}
+.shopScreen_tittle_h2 {
+  color: #9f9f9f;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  font-weight: 400;
+}
+
+.discription {
+  color: #9f9f9f;
+}
+
+.cards {
+  padding-right: 120px;
+  padding-left: 120px;
+  padding-top: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  /* flex-direction: row; */
+  justify-content: center;
+  /* Блок для картинки карточки */
+  /* Появление Кнопки при наведении */
+  /* При наведении на картинку карточки */
+}
+.cards .cardbox {
+  position: relative;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  max-width: 360px;
+}
+.cards .CardsImageBox {
+  background-color: #000;
+  max-height: 420px;
+}
+.cards .CardsImageBox:hover .add_to_cart {
+  opacity: 100;
+}
+.cards .imgCard:hover {
+  opacity: 0.6;
+  transition: all 0.5s;
+}
+
+.add_to_cart {
+  opacity: 0;
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  border: #f1e4e6 1px solid;
+  padding: 10px 10px;
+  transition: all 0.5s;
+  z-index: 2;
+}
+
+.add_to_cart span {
+  color: #ffffff;
+  padding-left: 6px;
+}
+
+.discription {
+  padding-left: 16px;
+}
+
+.discription_h1 {
+  color: #000;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.discription_text {
+  color: #5d5d5d;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  font-style: light;
+}
+
+.price {
+  color: #f16d7f;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.button_browse {
+  display: block;
+  width: 212px;
+  height: 48px;
+  color: #f26376;
+  background-color: #fff;
+  border-color: #f26376;
+  box-shadow: none;
+  margin: auto;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.advantages {
+  background-color: #222224;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.advantages .advBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 360px;
+  gap: 20px;
+}
+.advantages .advBox h1 {
+  color: #fbfbfb;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+.advantages .advBox span {
+  color: #fbfbfb;
+  font-family: "Lato", sans-serif;
+  font-size: 13.9px;
+  font-style: normal;
+  font-weight: 400;
+  font-weight: 300;
+  text-align: center;
+}
+
+.feedback {
+  background-image: url(./img/feedbackBack.png);
+  padding-top: 97px;
+  padding-bottom: 126px;
+  padding-right: 120px;
+  padding-left: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+}
+.feedback_feed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 360px;
+  gap: 30px;
+}
+.feedback_feed q {
+  text-align: center;
+  color: #222224;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+.feedback_feed span {
+  font-style: italic;
+}
+.feedback_subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+.feedback_subscribe h1 {
+  color: #222224;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-weight: 700;
+  text-align: center;
+}
+.feedback_subscribe span {
+  color: #222224;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* МЕДИА ЗАПРОСЫ */
+/* Планшет 768-1024px */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .headerContainer {
+    gap: 424px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .mainScreen {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .mainScreen_photoBox {
+    height: 368px;
+  }
+  .mainScreen_lineText_lineDiv_line {
+    width: 12px;
+    height: 92px;
+  }
+  .mainScreen_lineText_infoBox_text h1 {
+    font-family: "Lato", sans-serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+  }
+  .mainScreen_lineText_infoBox_text p {
+    color: #222222;
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-weight: 700;
+  }
+  .mainScreen_lineText_infoBox_text span {
+    color: #f16d7f;
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .collectionsScreen {
+    padding-right: 19px;
+    padding-left: 19px;
+  }
+  .collectionsScreen_firstline {
+    gap: 18px;
+  }
+  .collectionsScreen_firstline a {
+    width: 231px;
+    height: 167px;
+  }
+  .collectionsScreen_block4Div {
+    max-width: 747px;
+  }
+  .shopScreen_tittle {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+  .cards {
+    padding-right: 18px;
+    padding-left: 18px;
+    gap: 12px;
+  }
+}
+/* Мобила 320-767px */
+@media (max-width: 767px) and (min-width: 320px) {
+  .headerСontainer {
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+    gap: 0;
+  }
+  .headerСontainer_rightMenu_icons {
+    display: none;
+  }
+  .mainScreen {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .mainScreen_photoBox {
+    display: none;
+  }
+  .mainScreen_lineText {
+    padding-top: 149px;
+    padding-bottom: 148px;
+  }
+  .mainScreen_lineText_lineDiv_line {
+    width: 12px;
+    height: 61px;
+  }
+  .mainScreen_lineText_infoBox_text h1 {
+    font-family: "Lato", sans-serif;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 900;
+  }
+  .mainScreen_lineText_infoBox_text p {
+    color: #222222;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-weight: 700;
+  }
+  .mainScreen_lineText_infoBox_text span {
+    color: #f16d7f;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-weight: 700;
+  }
+  .collectionsScreen {
+    padding-right: 16px;
+    padding-left: 16px;
+    gap: 0;
+  }
+  .cards {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}/*# sourceMappingURL=style.css.map */
