@@ -304,7 +304,7 @@ header {
 .advantages {
   background-color: #222224;
   display: flex;
-  gap: 30px;
+  gap: 50px;
   justify-content: center;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -314,12 +314,13 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 360px;
+    max-width: 302px;
     gap: 20px;
   }
 
   .advBox h1 {
     @include Font(20px, #fbfbfb);
+    text-align: center;
   }
 
   .advBox span {
@@ -375,6 +376,111 @@ header {
   &_subscribe span {
     @include Font(18px, #222224);
   }
+}
+
+// СТРАНИЦА ПРОДУКТА
+
+.breadmenu {
+  background-color: #f8f3f4;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  padding-right: 120px;
+  padding-left: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    @include Font(24px, #f16d7f);
+  }
+
+  a {
+    @include Font(14px, #636363);
+    font-weight: 300;
+  }
+
+  .breadcrumb .active {
+    color: #f16d7f;
+    font-weight: 700;
+  }
+}
+
+.slider {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  border: #eaeaea 1px solid;
+  padding-bottom: 42px;
+  position: relative;
+  z-index: -1;
+}
+
+.aboutIt {
+  border: #eaeaea 1px solid;
+  width: 1140px;
+  margin-top: -64px;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 120px;
+  margin-left: auto;
+  margin-right: auto;
+
+  h2 {
+    @include Font(14px, #f16d7f);
+    font-weight: 300;
+    margin-bottom: 12px;
+  }
+
+  h1 {
+    @include Font(18px, #4d4d4d);
+    font-weight: 300;
+    margin-top: 12px;
+    margin-bottom: 48px;
+  }
+
+  .aboutIt_discrip {
+    @include Font(14px, #5e5e5e);
+    font-weight: 300;
+    margin-bottom: 32px;
+    text-align: center;
+    max-width: 555px;
+  }
+
+  .price {
+    @include Font(24px, #ef5b70);
+    font-weight: 300;
+    margin-bottom: 65px;
+  }
+
+  &_parram {
+    margin-top: 65px;
+    margin-bottom: 48px;
+
+    &_a {
+      @include Font(14px, #6f6e6e);
+    }
+  }
+}
+
+.addToCartProduct {
+  border: #f26376 1px solid;
+  padding: 10px 10px;
+  width: 212px;
+  display: flex;
+  justify-content: center;
+  gap: 23px;
+
+  &_Bottom {
+    @include Font(16px, #f26376);
+  }
+}
+
+.shopScreenProduct {
+  padding-bottom: 128px;
 }
 
 /* МЕДИА ЗАПРОСЫ */

@@ -316,7 +316,7 @@ header {
 .advantages {
   background-color: #222224;
   display: flex;
-  gap: 30px;
+  gap: 50px;
   justify-content: center;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -326,7 +326,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 360px;
+  max-width: 302px;
   gap: 20px;
 }
 .advantages .advBox h1 {
@@ -335,6 +335,7 @@ header {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
+  text-align: center;
 }
 .advantages .advBox span {
   color: #fbfbfb;
@@ -399,6 +400,130 @@ header {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
+}
+
+.breadmenu {
+  background-color: #f8f3f4;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  padding-right: 120px;
+  padding-left: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.breadmenu p {
+  color: #f16d7f;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+.breadmenu a {
+  color: #636363;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  font-weight: 300;
+}
+.breadmenu .breadcrumb .active {
+  color: #f16d7f;
+  font-weight: 700;
+}
+
+.slider {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  border: #eaeaea 1px solid;
+  padding-bottom: 42px;
+  position: relative;
+  z-index: -1;
+}
+
+.aboutIt {
+  border: #eaeaea 1px solid;
+  width: 1140px;
+  margin-top: -64px;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.aboutIt h2 {
+  color: #f16d7f;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+.aboutIt h1 {
+  color: #4d4d4d;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  font-weight: 300;
+  margin-top: 12px;
+  margin-bottom: 48px;
+}
+.aboutIt .aboutIt_discrip {
+  color: #5e5e5e;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  font-weight: 300;
+  margin-bottom: 32px;
+  text-align: center;
+  max-width: 555px;
+}
+.aboutIt .price {
+  color: #ef5b70;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-weight: 300;
+  margin-bottom: 65px;
+}
+.aboutIt_parram {
+  margin-top: 65px;
+  margin-bottom: 48px;
+}
+.aboutIt_parram_a {
+  color: #6f6e6e;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.addToCartProduct {
+  border: #f26376 1px solid;
+  padding: 10px 10px;
+  width: 212px;
+  display: flex;
+  justify-content: center;
+  gap: 23px;
+}
+.addToCartProduct_Bottom {
+  color: #f26376;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.shopScreenProduct {
+  padding-bottom: 128px;
 }
 
 /* МЕДИА ЗАПРОСЫ */
